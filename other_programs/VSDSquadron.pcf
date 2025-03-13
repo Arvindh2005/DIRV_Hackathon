@@ -1,0 +1,13 @@
+# Clock and Reset
+set_io clk 35        # Assign clock pin (Check FPGA docs for exact pin)
+set_io reset 37       # Assign reset pin (Based on 'creset')
+
+# UART Communication
+set_io uart_tx 4  # UART TX mapped to RGB0 LED (39) 
+set_io uart_rx 3    # UART RX mapped to RGB2 LED (41)
+
+# Debug LEDs (Optional)
+set_io led_green 41  # Assign LED green
+set_io led_red 39    # Assign LED red
+set_io led_blue 40   # Assign LED blue
+
